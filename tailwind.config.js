@@ -11,7 +11,8 @@ module.exports = {
           800: "#323336",
         },
         orange: {
-          500: "#F16D45",
+          800: "#5E4D4E",
+          500: "#F28B81",
         },
       },
       fontFamily: {
