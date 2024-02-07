@@ -1,10 +1,10 @@
 import { View, Text, FlatList } from "react-native"
 
+import { EMAILS } from "@/utils/emails"
 import { Input } from "@/components/input"
 import { Email } from "@/components/email"
 import { Avatar } from "@/components/avatar"
 import { MenuButton } from "@/components/menu-button"
-import { EMAILS } from "@/utils/emails"
 import { FloatButton } from "@/components/float-button"
 
 export default function Home() {

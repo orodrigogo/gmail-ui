@@ -1,6 +1,6 @@
 import { View, Text } from "react-native"
 import { MaterialIcons } from "@expo/vector-icons"
-import colors from "tailwindcss/colors"
+import { colors } from "@/styles/colors"
 
 import { Avatar } from "@/components/avatar"
 import { EmailDataProps } from "@/utils/emails"
@@ -19,7 +19,7 @@ export function Email({ data }: EmailProps) {
           <MaterialIcons
             name="label-important"
             size={16}
-            color={colors.yellow[400]}
+            color={colors.yellow[600]}
           />
 
           <Text className="text-lg font-subtitle text-gray-400 flex-1">
@@ -49,7 +49,7 @@ export function Email({ data }: EmailProps) {
           <MaterialIcons
             name={data.start ? "star" : "star-outline"}
             size={22}
-            color={data.start ? colors.blue[400] : colors.gray[400]}
+            color={data.start ? colors.blue[600] : colors.gray[400]}
           />
         </View>
       </View>

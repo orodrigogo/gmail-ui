@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 import { View, TextInput, TextInputProps } from "react-native"
-import colors from "tailwindcss/colors"
+import { colors } from "@/styles/colors"
 
 type InputProps = {
   children: ReactNode
@@ -19,7 +19,7 @@ function InputField({ ...rest }: TextInputProps) {
     <TextInput
       className="flex-1 font-normal text-base text-white"
       placeholderTextColor={colors.gray[400]}
-      cursorColor={colors.blue[400]}
+      cursorColor={colors.blue[600]}
       {...rest}
     />
   )
