@@ -16,6 +16,7 @@
     "@expo-google-fonts/roboto": "^0.2.3",
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^6.0.2",
+    "clsx": "^2.1.0",
     "expo": "~50.0.6",
     "expo-font": "~11.10.2",
     "expo-linking": "~6.2.2",

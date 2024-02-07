@@ -1,12 +1,17 @@
 import { Image, ImageProps } from "react-native"
+import clsx from "clsx"
 
-type AvatarProps = ImageProps & {}
+type AvatarProps = ImageProps & {
+  size?: "small" | "medium"
+}
 
-export function Avatar({ ...rest }: ImageProps) {
+export function Avatar({ size = "medium", ...rest }: AvatarProps) {
   return (
     <Image
-      className="w-8 h-8 rounded-full"
-      source={{ uri: "https://github.com/orodrigogo.png" }}
+      className={clsx("rounded-full", {
+        "w-8 h-8": size === "small",
+        "w-10 h-10": size === "medium",
+      })}
       {...rest}
     />
   )
