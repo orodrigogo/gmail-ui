@@ -8,6 +8,7 @@ import {
   Roboto_500Medium,
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto"
+import { SafeAreaProvider } from "react-native-safe-area-context"
 
 import { Loading } from "@/components/loading"
 
@@ -23,9 +24,9 @@ export default function Layout() {
   }
 
   return (
-    <>
+    <SafeAreaProvider>
       <StatusBar barStyle="light-content" />
       <Slot />
-    </>
+    </SafeAreaProvider>
   )
 }
