@@ -20,6 +20,7 @@ export default function TabLayout() {
         },
         tabBarShowLabel: false,
       }}
+      initialRouteName="index"
     >
       <Tabs.Screen
         name="index"
